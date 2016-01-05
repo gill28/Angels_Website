@@ -1,13 +1,11 @@
 body {
+    background-color: black;
     background-image: url("../images/background.png");
-   /* width: 100%;
-    height: 100%;*/
-    /*position: fixed;*/
+    background-repeat: no-repeat;
+    background-position: 40% 0%;
+    background-attachment: fixed;
 }
-nav {
-    width: 100%;
-    height: 50px;
-}
+
 
 
 
@@ -16,16 +14,22 @@ nav {
 /*--------Menu Outline---------*/
 
 .wrapper {
+
     margin: 0 auto;
 }
-.menu-wrap {
+
+.menu {
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
 }
 
 .menu ul {
-    position: fixed;
-    width: 100%;
+    width: 615px;
+    margin: 0 auto;
 }
 
 .menu li {
@@ -34,10 +38,7 @@ nav {
     text-decoration: none;
 }
 
-.menu ul {
-    position: fixed;
-    width: 100%;
-}
+
 
 .menu a {
     transition: all linear 0.15s;
@@ -120,7 +121,7 @@ nav {
 .banner {
     background: rgba(255, 90, 193, 0.4);
     height: 304px;
-    margin-top: 50px;
+    margin-top: 100px;
     box-shadow: 5px 5px 20px #888888;
 }
 
@@ -160,6 +161,10 @@ nav {
     font-family: 'Ek Mukta';
     font-size: 20px;
     color: white;
+
+}
+.main {
+    width: 960px;
 
 }
 
