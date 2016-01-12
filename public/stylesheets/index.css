@@ -6,10 +6,10 @@ body {
     background-attachment: fixed;
 }
 
-
-
-
-
+header p {
+    width: 960px;
+    margin: 0 auto;
+}
 
 /*--------Menu Outline---------*/
 
@@ -25,6 +25,7 @@ body {
     height: 50px;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 
 .menu ul {
@@ -37,8 +38,6 @@ body {
     font-family: 'Ek Mukta';
     text-decoration: none;
 }
-
-
 
 .menu a {
     transition: all linear 0.15s;
@@ -55,7 +54,7 @@ body {
     line-height: 0%;
 }
 
-/*--------Top Level--------*/
+/*--------Navigation--------*/
 
 .menu > ul > li {
     text-align: center;
@@ -72,7 +71,7 @@ body {
 }
 
 .menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:#2e2728;
+    color: white;
 }
 
 /*----- Bottom Level -----*/
@@ -80,6 +79,7 @@ body {
 .menu li:hover .sub-menu {
     z-index:1;
     opacity:1;
+    visibility: visible;
 }
 
 .sub-menu {
@@ -88,11 +88,13 @@ body {
     position:absolute;
     top:100%;
     left:0px;
-    z-index:-1;
+    visibility: hidden;
+    z-index:9999;
     opacity:0;
     transition:opacity linear 0.15s;
     box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#2e2728;
+    background: rgb(46, 45, 45);
+    margin-top: -2px;
 }
 
 .sub-menu li {
@@ -108,14 +110,22 @@ body {
 
 .sub-menu li a:hover, .sub-menu .current-item a {
     background:#3e3436;
+
 }
 
+/*--------Banner--------*/
 
+.signature {
+    margin-top: 20px;
+}
 
-.signature img{
-    width: 300px;
-    height: 100px;
-    margin: 20px 0 0 340px;
+.profile {
+    float: left;
+    margin-left: 64px;
+    height: 200px;
+    width: 150px;
+    margin-top: 62px;
+    z-index: -1;
 }
 
 .banner {
@@ -133,9 +143,7 @@ body {
 
 }
 /*---------Main Content---------*/
-.main {
-    margin-top: 60px;
-}
+
 .main-content section h1 {
     text-align: center;
     font-family: 'Poiret One', cursive;
@@ -143,11 +151,11 @@ body {
     margin-bottom: 45px;
 }
 
+/*---------Welcome Section-------*/
 .welcome {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
     border-radius: 3px;
-    margin-bottom: 15px;
     text-align: center;
 }
  .welcome h2 {
@@ -161,12 +169,105 @@ body {
     font-family: 'Ek Mukta';
     font-size: 20px;
     color: white;
-
 }
-.main {
-    width: 960px;
 
+.sub-btn {
+    font-size: 30px;
+    color: #F491CB;
+    text-decoration: none;
 }
+
+
+/*----------Book Section----------*/
+.main-books {
+    padding: 15px;
+    text-align: center;
+}
+
+.main-books h1:first-child {
+    margin-top: 20px;
+}
+
+.main-books h3 {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 18px;
+    text-shadow: 3px 5px 2px pink;
+}
+
+.main-books section {
+    margin-bottom: 25px;
+}
+
+/*------Book Overlay Effect------*/
+
+.view {
+   height: 225px;
+   float: left;
+   border: 5px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 0px 0px 5px #aaa;
+   cursor: default;
+}
+
+.view .mask, .view .content {
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+
+.view a.info {
+   background:url("../images/link.png") center no-repeat;
+   display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-9999px;
+   width:20px;
+   height:20px;
+}
+
+.third-effect .mask {
+   opacity: 0;
+   overflow:visible;
+   border:100px solid rgba(0,0,0,0.7);
+   box-sizing:border-box;
+   transition: all 0.4s ease-in-out;
+}
+
+.third-effect a.info {
+   position:relative;
+   top:-10px;
+   right: 35px; /* Center the link */
+   opacity: 0;
+   transition: opacity 0.5s 0s ease-in-out;
+}
+
+.third-effect:hover .mask {
+   opacity: 1;
+   border:100px solid rgba(0,0,0,0.7);
+}
+
+.third-effect:hover a.info {
+   opacity:1;
+   transition-delay: 0.3s;
+}
+
+
+
+.fcbk {
+    margin-right: 35px;
+}
+
+
 
 
 
