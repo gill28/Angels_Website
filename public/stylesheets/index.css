@@ -30,7 +30,8 @@ header p {
 }
 
 .menu ul {
-    width: 615px;
+    width: 100%;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -189,7 +190,7 @@ header p {
     margin-top: 20px;
 }
 
-.main-books h3 {
+section h3 {
     font-family: 'Tangerine', cursive;
     font-size: 50px;
     text-align: center;

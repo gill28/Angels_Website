@@ -4,7 +4,7 @@ var path = require('path');
 
 router.get('/', function(req, res, next){
     var index = path.join(__dirname, "../../public/main.html");
-   res.sendFile(index);
+    res.sendFile(index);
 });
 
 module.exports = router;

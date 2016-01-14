@@ -9,18 +9,22 @@ myApp.controller('mainCtrl', function ($scope, $http) {
     //    console.log(modalName);
     //    $scope[modalName] = !$scope[modalName];
     //    console.log($scope[modalName]);
-    //
-    //};
+
+        $scope.showModal = false;
+        $scope.toggleModal = function(){
+            $scope.showModal = !$scope.showModal
+
+    };
 });
 
-myApp.controller('catetoryCtrl', function($scope, $http, $routeParams){
+myApp.controller('categoryCtrl', function($scope, $http, $routeParams){
 
-    console.log($scope.categorys);
+
     for (var i = 0; i < $scope.categorys.length; i++) {
         if ($scope.categorys[i].tag === $routeParams.tag) {
             $scope.category = $scope.categorys[i];
             break;
         }
     }
-    console.log($scope.category.books);
+
 })

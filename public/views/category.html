@@ -1,11 +1,58 @@
-<section class="container_12" ng-controller="catetoryCtrl">
+<!--<head>-->
+    <!--<title>Angelita Gill</title>-->
+    <!--<link rel="stylesheet" href="../stylesheets/reset.css">-->
+    <!--<link rel="stylesheet" href="../stylesheets/index.css">-->
+    <!--<link rel="stylesheet" href="../stylesheets/960_12_col.css">-->
+    <!--<link rel="stylesheet" href="../stylesheets/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../stylesheets/index.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>-->
+<!--</head>-->
+
+
+<section class="container_12" ng-controller="categoryCtrl">
     <h3>{{category.category}}</h3>
     <div class="container_12 grid_10 push_2">
         <div class="view third-effect" ng-repeat="book in category.books">
-            <img src="{{book.image}}" width="150px"alt="">
-            <div class="mask" style="width: 200px; height: 225px ">
-                <a href="#" class="info"></a>
+            <img ng-src="{{book.image}}" width="150px"alt="">
+            <div ng-click="toggleModal()" ng-controller="mainCtrl" class="mask " style="width: 200px; height: 225px ">
+                <!--<a ng-click="toggleModal()" class="info"></a>-->
+                <modal title="{{book.book}}" visible="showModal">
+                    <div>
+
+                        <img width="150px" src="{{book.image}}" alt="">
+                    </div>
+                </modal>
+
+
+
+
+
+                <!--<button ng-click="toggleModal()" class="btn btn-default">Open modal</button>-->
+
+                <!--<modal title="Login form" visible="showModal">-->
+                    <!--<form role="form">-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="email">Email address</label>-->
+                            <!--<input type="email" class="form-control" id="email" placeholder="Enter email" />-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="password">Password</label>-->
+                            <!--<input type="password" class="form-control" id="password" placeholder="Password" />-->
+                        <!--</div>-->
+                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
+                    <!--</form>-->
+                <!--</modal>-->
             </div>
         </div>
     </div>
 </section>
+<!--<script src="../vendors/jquery.min.js"></script>-->
+<!--<script src="../vendors/bootstrap.min.js"></script>-->
+<!--<script src="../vendors/angular.min.js"></script>-->
+<!--<script src="../vendors/angular-route.min.js"></script>-->
+<!--<script src="../javascripts/app.js"></script>-->
+<!--<script src="../javascripts/config.js"></script>-->
+<!--<script src="../javascripts/controllers/main.js"></script>-->
+<!--<script src="../javascripts/directives/modal.js"></script>-->
