@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <title>Angelita Gill</title>
+        <link rel="stylesheet" href="stylesheets/reset.css">
+        <link rel="stylesheet" href="stylesheets/index.css">
+        <link rel="stylesheet" href="stylesheets/960_12_col.css">
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/index.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="wrapper"  ng-controller="mainCtrl">
+            <div class="menu-wrap">
+                <nav class="menu">
+                    <ul class="clearfix">
+                        <li><a href="#/" class="left">Home</a></li>
+                        <li>
+                            <a href="#">Book Series <span class="arrow">&#9660;</span></a>
+                            <ol class="sub-menu">
+                                <li ng-repeat="category in categorys">
+                                    <a ng-href="#/category/{{category.tag}}">{{category.category}}</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><a href="#/about">About</a></li>
+                        <li class=""><a href="#/contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <header class="container_12 banner">
+                <div>
+                    <img class="profile" src="images/Profile.png" alt="profile pic">
+                    <img class="grid_6 signature" src="images/agbanner.png" alt="">
+                </div>
+            </header>
+
+            <div class="container_12 main main-content">
+                <div ng-view></div>
+            </div>
+         <script src="vendors/jquery.min.js"></script>
+         <script src="vendors/bootstrap.min.js"></script>
+         <script src="vendors/angular.min.js"></script>
+         <script src="vendors/angular-route.min.js"></script>
+         <script src="javascripts/app.js"></script>
+         <script src="javascripts/config.js"></script>
+         <script src="javascripts/controllers/main.js"></script>
+         <script src="javascripts/directives/modal.js"></script>
+    </body>
+</html>

@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position: 40% 0%;
     background-attachment: fixed;
+    max-width: 100%;
 }
 
 header p {
@@ -198,6 +199,19 @@ header p {
 
 .main-books section {
     margin-bottom: 25px;
+}
+
+/*---------------POP UP BOOKS--------------*/
+
+.pop-up-book {
+    color: white;
+    width: 500px;
+    height: 300px;
+
+}
+
+.pop-up-book p {
+    float: right;
 }
 
 /*------Book Overlay Effect------*/

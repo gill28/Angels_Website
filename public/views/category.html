@@ -1,0 +1,11 @@
+<section class="container_12" ng-controller="catetoryCtrl">
+    <h3>{{category.category}}</h3>
+    <div class="container_12 grid_10 push_2">
+        <div class="view third-effect" ng-repeat="book in category.books">
+            <img src="{{book.image}}" width="150px"alt="">
+            <div class="mask" style="width: 200px; height: 225px ">
+                <a href="#" class="info"></a>
+            </div>
+        </div>
+    </div>
+</section>
