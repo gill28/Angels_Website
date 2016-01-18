@@ -138,12 +138,24 @@ header p {
 }
 
 .banner p {
+    position: absolute;
+    width: 897px;
     text-align: center;
     font-family: 'Poiret One', cursive;
     font-size: 2.2em;
     color: white;
+    margin-top: 176px;
 
 }
+
+.chand {
+    clear: both;
+    position: absolute;
+    margin-left: 351px;
+    margin-top: -216px;
+}
+
+
 /*---------Main Content---------*/
 
 .main-content section h1 {
@@ -280,6 +292,14 @@ section h3 {
 
 .fcbk {
     margin-right: 35px;
+}
+
+/*----------------MODAL---------------*/
+
+.modalPic {
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 20px;
 }
 
 

@@ -1,26 +1,95 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="myAdmin">
 <head>
     <title>Angelita Gill</title>
-    <link rel="stylesheet" href="stylesheets/reset.css">
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <link rel="stylesheet" href="stylesheets/960_12_col.css">
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="../stylesheets/reset.css">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="../stylesheets/960_12_col.css">
+    <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/admin.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Angelita Gill</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Upload</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+    <select class="select">
+        <option selected>Select Book Series</option>
+        <option value="1">Priceless Collection</option>
+        <option value="2">1NightStand</option>
+        <option value="3">Paranormal/Fantasy</option>
+        <option value="3">Contemporary</option>
+        <option value="4">Holidays</option>
+    </select>
+
+    <form>
+        <input class="btn-upload" type="file" onchange="previewFile()"><br>
+        <img src="" height="200" alt="Image preview...">
+
+        <fieldset class="form-group">
+            <label for="formGroupExampleInput2">URL</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Input URL">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="formGroupExampleInput2">Description</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Book Description">
+        </fieldset>
+    </form>
+    <button>Submit</button>
+
+
+        <div id="logindiv">
+            <form class="form" action="#" id="login">
+                <img src="images/button_cancel.png" class="img" id="cancel"/>
+                <h3>Login Form</h3>
+                <hr/><br/>
+                <label>Username : </label>
+                <br/>
+                <input type="text" id="username" placeholder="Ex -john123"/><br/>
+                <br/>
+                <label>password : </label>
+                <br/>
+                <input type="text" id="password" placeholder="************"/><br/>
+                <br/>
+                <input type="button" id="loginbtn" value="Login"/>
+                <input type="button" id="cancel" value="Cancel"/>
+                <br/>
+
+            </form>
+
+        </div>
 
 
 
-    <script src="vendors/jquery.min.js"></script>
-    <script src="vendors/bootstrap.min.js"></script>
-    <script src="vendors/angular.min.js"></script>
-    <script src="vendors/angular-route.min.js"></script>
-    <script src="javascripts/app.js"></script>
-    <script src="javascripts/config.js"></script>
-    <script src="javascripts/controllers/main.js"></script>
-    <script src="javascripts/directives/modal.js"></script>
+
+
+    <script src="../vendors/jquery.min.js"></script>
+    <script src="../vendors/bootstrap.min.js"></script>
+    <!--<script src="../vendors/angular.min.js"></script>-->
+    <script src="../vendors/angular-route.min.js"></script>
+    <script src="../javascripts/controllers/upload.js"></script>
+    <script src="../javascripts/app.js"></script>
+    <!--<script src="../javascripts/config.js"></script>-->
 </body>
