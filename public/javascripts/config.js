@@ -11,8 +11,8 @@ myApp.config(['$routeProvider', function ($routeProvider) {
 
 }]);
 
-myAdmin.config(['$routeProvider', function($routeProvider){
-    $routeProvider.when('/admin', {
-        templateUrl: 'views/admin.html'
-    });
-}]);
+//myAdmin.config(['$routeProvider', function($routeProvider){
+//    $routeProvider.when('/admin', {
+//        templateUrl: 'views/admin.html'
+//    });
+//}]);

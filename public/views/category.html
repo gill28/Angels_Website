@@ -13,6 +13,7 @@
                         <div>
                             <img class="modalPic" width="150px" ng-src="{{book.image}}" alt="">
                             <p>{{book.description}}</p>
+                            <a ng-href="{{book.url}}"><img width="100px" src="../images/amazon.png" alt=""></a>
                         </div>
                     </modal>
                 </div>
@@ -25,8 +26,8 @@
     <modal title="{{book.book}}" visible="showModal">
         <div>
             <img class="modalPic" width="150px" ng-src="{{book.image}}" alt="">
+            <img src="../images/amazon.png" alt="">
             <p>{{book.description}}</p>
-
         </div>
     </modal>
 </div>
