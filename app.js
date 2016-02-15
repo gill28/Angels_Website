@@ -7,13 +7,14 @@ var bodyParser = require('body-parser');
 
 
 var routes = require('./server/routes/index');
-//var admin = require('./public/views/admin');
+
 var data = require('./server/routes/data');
+
 
 var app = express();
 
 app.set('views', path.join(__dirname, 'views'));
-//app.set('view engine', 'jade');
+
 
 
 app.use(logger('dev'));
@@ -24,7 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/data', data);
-//app.use('/admin', admin);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
