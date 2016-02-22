@@ -299,9 +299,55 @@ section h3 {
 .modalPic {
     margin: 0 auto;
     border: 1px solid black;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
+.modal {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.modal-inner {
+  width: 50%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #ffffff;
+  margin-top: 50px;
+  border-radius: 4px;
+}
+
+.modal-inner-title {
+  margin-bottom: 24px;
+  font-family: cursive;
+  font-size: 2.5em;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.modal-inner-img {
+  width: 200px;
+  margin-bottom: 24px;
+  margin: 0 auto;
+}
+
+.modal-inner img {
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+
+.modal-inner-desc {
+  margin-bottom: 24px;
+}
+
+.modal-inner-link {
+  width: 150px;
+  margin-bottom: 0;
+}
 
 
 

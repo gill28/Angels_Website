@@ -1,33 +1,10 @@
-
-
-
-<section class="container_12" ng-controller="categoryCtrl">
+<section class="container_12 js-category" ng-controller="categoryCtrl" data-categorynum="{{categorynum}}">
 
     <h3>{{category.category}}</h3>
 
     <div class="container_12 grid_10 push_2">
-        <div class="view third-effect" ng-repeat="book in category.books">
-            <img ng-src="{{book.image}}" width="150px" alt="">
-                <div ng-click="toggleModal()" ng-controller="mainCtrl" class="mask " style="width: 200px; height: 225px ">
-                    <modal title="{{book.book}}" visible="showModal">
-                        <div>
-                            <img class="modalPic" width="150px" ng-src="{{book.image}}" alt="">
-                            <p>{{book.description}}</p>
-                            <a ng-href="{{book.url}}"><img width="100px" src="../images/amazon.png" alt=""></a>
-                        </div>
-                    </modal>
-                </div>
-            </div>
+        <div class="view third-effect js-modal" ng-repeat="book in category.books">
+            <img ng-src="{{book.image}}" width="150px" alt="" />
         </div>
     </div>
 </section>
-
-<div ng-click="toggleModal()" ng-controller="mainCtrl" class="mask " style="width: 200px; height: 225px ">
-    <modal title="{{book.book}}" visible="showModal">
-        <div>
-            <img class="modalPic" width="150px" ng-src="{{book.image}}" alt="">
-            <img src="../images/amazon.png" alt="">
-            <p>{{book.description}}</p>
-        </div>
-    </modal>
-</div>
