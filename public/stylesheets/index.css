@@ -15,7 +15,7 @@ header p {
 /*--------Menu Outline---------*/
 
 .wrapper {
-
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -315,14 +315,17 @@ section h3 {
   width: 50%;
   margin: 0 auto;
   padding: 25px;
-  background-color: #ffffff;
+  background-color: black;
   margin-top: 50px;
   border-radius: 4px;
+  border: 2px solid pink;
+  box-shadow: 0 0 25px 10px;
 }
 
 .modal-inner-title {
   margin-bottom: 24px;
-  font-family: cursive;
+  font-family: helvetica sans serif;
+  color: white;
   font-size: 2.5em;
   text-align: center;
   border-bottom: 2px solid black;
@@ -330,8 +333,9 @@ section h3 {
 
 .modal-inner-img {
   width: 200px;
-  margin-bottom: 24px;
+  height: 300px;
   margin: 0 auto;
+  box-shadow: 0 0 10px 5px white;
 }
 
 .modal-inner img {
@@ -341,16 +345,28 @@ section h3 {
 }
 
 .modal-inner-desc {
-  margin-bottom: 24px;
+  margin-top: 25px;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+  border-radius: 8px;
 }
 
 .modal-inner-link {
-  width: 150px;
-  margin-bottom: 0;
+  width: 35%;
+  margin: 0 auto;
 }
 
+label h4 {
+  display: block;
+  color: white;
+  float: left;
+}
 
-
+.emailShared {
+  color: red;
+  font-style: italic;
+}
 
 
 

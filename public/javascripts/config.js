@@ -6,6 +6,8 @@ myApp.config(['$routeProvider', function ($routeProvider) {
         templateUrl: 'views/about.html'
     }).when('/category/:tag', {
         templateUrl: 'views/category.html'
+    }).when('/contact', {
+        templateUrl: 'views/contact.html'
     }).otherwise({
         redirectTo: '/'
     });
