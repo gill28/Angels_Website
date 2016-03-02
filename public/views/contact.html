@@ -1,19 +1,20 @@
 <div class="welcome">
     <h2>CONTACT ME</h2>
-<form>
+<form method="post" action="#/contact/send">
   <fieldset class="form-group">
     <label for="exampleInputEmail"><h4>Name: (optional)</h4></label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+    <input id="to" type="text" class="form-control" placeholder="Name">
   </fieldset>
   <fieldset class="form-group">
     <label for="formGroupExampleInput2"><h4>Email Address:</h4></label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email Address">
+    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email Address">
     <h5 class="emailShared">Your email will never be shared!!</h5>
   </fieldset>
    <fieldset class="form-group">
-    <label for="exampleTextarea"><h4>Message:</h4></label>
-    <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
+    <label><h4>Message:</h4></label>
+    <textarea class="form-control" id="content" rows="4"></textarea>
   </fieldset>
-  <button type="submit" class="btn btn-primary">SEND</button>
+  <button id="send_email" class="btn btn-primary">SEND</button>
+  <span id="message"></span>
 </form>
 </div>
